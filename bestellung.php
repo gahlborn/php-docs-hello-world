@@ -1,5 +1,6 @@
 <html> <!-- Start HTML --> 
 <head> <!-- Start HTML-Kopf -->  
+  
 <!-- CSS-Formatierung für die Tabelle --> 
 <style type="text/css">   
 table {   
@@ -24,14 +25,15 @@ color: #FFFFFF;
 
 <?php //Start PHP  
   
-//Parameter holen und ausgeben  
+/*Parameter holen und ausgeben  */
+  
 $bnr = $_GET["bnr"];  
 echo "<h1>iBrot-Bestellung</h1>";  
 echo "<h2>Bestellnummer: $bnr </h2>";   
   
 /*SQL Server Extension Sample Code: */
   
-$connectionInfo = array("UID" => "use", "pwd" => 'Sysgoa1967##', "Database" => "ibrot", "LoginTimeout" => 30,"Encrypt" => 1, "TrustServerCertificate" => 0); 
+$connectionInfo = array("UID" => "gui", "pwd" => 'Sysgoa1967##', "Database" => "ibrot", "LoginTimeout" => 30,"Encrypt" => 1, "TrustServerCertificate" => 0); 
 $serverName = "tcp:gui-ibrot-dbsrv.database.windows.net,1433"; 
 $conn = sqlsrv_connect($serverName, $connectionInfo); 
  
