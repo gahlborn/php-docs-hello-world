@@ -29,7 +29,7 @@ $bnr = $_GET["bnr"];
 echo "<h1>iBrot-Bestellung</h1>";  
 echo "<h2>Bestellnummer: $bnr </h2>";   
   
-// SQL Server Extension Sample Code: $connectionInfo = array("UID" => "use", "pwd" => 'Sysgoa1967##', "Database" => "ibrot", "LoginTimeout" => 30,
+SQL Server Extension Sample Code: $connectionInfo = array("UID" => "use", "pwd" => 'Sysgoa1967##', "Database" => "ibrot", "LoginTimeout" => 30,
   "Encrypt" => 1, "TrustServerCertificate" => 0); 
 $serverName = "tcp:gui-ibrot-dbsrv.database.windows.net,1433"; 
 $conn = sqlsrv_connect($serverName, $connectionInfo); 
